@@ -1,0 +1,15 @@
+You will need to ensure your firewall allows access to your system at port 80.
+Most of you have IIS set up running LoanBook. If not, install IIS 7+.
+Open solution, right click project and click properties.
+Find start up options, it should be set to using IIS and there will be a button which will create a virtual directory.
+You will need to ensure permissions are set correctly, otherwise there will be no logs of your requests.
+
+Press F5 to start your application and check that it works correctly.
+Identify your IP and replace localhost with that in your browser to verify.
+Register to the challenge!
+- You can stop debugging, but your application will still respond to requests.
+- You can do a build (Ctrl+Shift+B) to update the codebase without debugging.
+- No downtime, only slow requests! (not guaranteed)
+
+You should notice a requests.txt file being created at the root of your website with lines representing the requests. 
+If not, check your permissions or debug.
